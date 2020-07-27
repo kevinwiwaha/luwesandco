@@ -1,0 +1,155 @@
+body {
+  background-color: #fcfcfc;
+}
+
+.produk {
+  font-family: "Poppins", sans-serif;
+}
+
+.item {
+  margin-top: 20px;
+  -webkit-transform: scale(0.85);
+          transform: scale(0.85);
+  position: relative;
+  left: -5%;
+}
+
+.item h1 {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.item h3 {
+  font-size: 40px;
+  font-weight: 300;
+  color: #9b6053;
+}
+
+.size {
+  margin-top: 0px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+label {
+  width: 44px;
+  position: relative;
+  margin-right: 5px;
+  border: 1px solid black;
+  border-radius: 3px;
+  text-align: center;
+  cursor: pointer;
+}
+
+input[type="radio"]:checked + label {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.text-size {
+  letter-spacing: 1px;
+  font-size: 1em;
+  font-weight: 400;
+}
+
+.form-size {
+  margin-top: -15px;
+}
+
+.btn-order {
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+.btn-cons {
+  padding-left: 172px;
+  padding-right: 172px;
+}
+
+.btn-cons:hover {
+  color: #f2e1cf;
+}
+
+.form-check {
+  padding: 0;
+  margin: 0;
+}
+
+.bungkus-btn {
+  margin-top: 50px;
+}
+
+form {
+  margin-top: 30px;
+}
+
+h5 {
+  font-size: 16px;
+  margin-top: 18px;
+  border-bottom: 2px solid #9b6053;
+  padding-bottom: 0.2em;
+  display: inline-block;
+}
+
+p {
+  font-size: 14px;
+}
+
+@media (min-width: 992px) {
+  .nav-link {
+    font-size: 11px;
+    color: black;
+  }
+  .item {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    position: relative;
+    left: 0;
+  }
+  .item h1 {
+    font-size: 24px;
+    margin-top: 7px;
+    font-weight: 200;
+  }
+  .item h3 {
+    font-size: 46px;
+    font-weight: 200;
+    color: #9b6053;
+    margin-top: 16px;
+  }
+  label {
+    width: 54px;
+    position: relative;
+    margin-right: 5px;
+    border: 1px solid black;
+    border-radius: 3px;
+    text-align: center;
+    cursor: pointer;
+  }
+  input[type="radio"]:checked + label {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+  }
+  .btn-order {
+    padding-left: 130px;
+    padding-right: 130px;
+  }
+  .btn-cons {
+    padding-left: 102px;
+    padding-right: 102px;
+  }
+  h5 {
+    font-size: 16px;
+    margin-top: 38px;
+  }
+  p {
+    font-size: 14px;
+  }
+}
+/*# sourceMappingURL=produk.css.map */
