@@ -1,0 +1,358 @@
+html,
+body {
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+/* Hyperlink */
+a:link {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+a:visited {
+  color: rgb(54, 52, 52);
+  background-color: transparent;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Navbar */
+.nav-item1 {
+  letter-spacing: 2px;
+  margin-right: 4vh;
+}
+
+.nav-item2 {
+  letter-spacing: 2px;
+  margin-left: 4vh;
+}
+
+/* Utility */
+section {
+  width: 100%;
+  height: 80vh;
+  background-size: cover;
+}
+
+/* carousel */
+
+.satu {
+  margin-top: 100px;
+}
+
+.satu h5 {
+  font-family: "Playfair Display", serif;
+  font-size: 81px;
+  margin-bottom: 3vh;
+  text-align: right;
+  color: #f9f3dd;
+}
+
+.satu p {
+  font-size: 15px;
+  margin-bottom: 4vh;
+  text-align: right;
+  letter-spacing: 5px;
+  color: #f9f3dd;
+}
+
+.satu a {
+  color: #f9f3dd;
+  text-align: right;
+  margin-bottom: 1vh;
+  letter-spacing: 2px;
+}
+
+.gambar1 {
+  margin-left: auto;
+  size: 15vh;
+  margin-bottom: 5vh;
+}
+
+.tombol {
+  position: absolute;
+}
+
+.dua {
+  margin-top: 200px;
+}
+
+.dua h5 {
+  font-family: "Playfair Display", serif;
+  font-size: 55px;
+  margin-bottom: 3vh;
+  color: #3a3531;
+  letter-spacing: 6px;
+  text-align: left;
+}
+
+.dua p {
+  font-size: 15px;
+  margin-bottom: 5vh;
+  text-align: right;
+  letter-spacing: 3px;
+  color: #3a3531;
+}
+
+.dua a {
+  color: #3a3531;
+  text-align: right;
+  margin-bottom: 19vh;
+  letter-spacing: 2px;
+}
+
+.gambar2 {
+  margin-bottom: 6vh;
+}
+
+.tiga {
+  margin-top: 150px;
+}
+
+.tiga h5 {
+  font-family: "Playfair Display", serif;
+  font-size: 81px;
+  margin-bottom: 3vh;
+  text-align: right;
+  color: #f9f3dd;
+}
+
+.tiga p {
+  font-size: 15px;
+  margin-bottom: 5vh;
+  text-align: right;
+  color: #f9f3dd;
+  letter-spacing: 2px;
+}
+
+.tiga a {
+  color: #f9f3dd;
+  text-align: right;
+  margin-bottom: 17vh;
+  letter-spacing: 5px;
+}
+
+/* Popular Item */
+.text-judul {
+  font-size: 28px;
+  font-family: "Poppins", sans-serif;
+  font-style: initial;
+}
+
+.text-judul::after {
+  content: "";
+  display: block;
+  border-bottom: 4px solid #d9caba;
+  width: 8%;
+  margin: auto;
+  padding-bottom: 5px;
+}
+
+.card-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.card-subtitle {
+  font-family: "Poppins", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+/* Circle */
+.hover15 figure {
+  position: relative;
+}
+.hover15 figure::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  display: block;
+  content: "";
+  width: 0;
+  height: 0;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 100%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+.hover15 figure:hover::before {
+  -webkit-animation: circle 0.75s;
+  animation: circle 0.75s;
+}
+@-webkit-keyframes circle {
+  0% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 1;
+  }
+  100% {
+    width: 200%;
+    height: 200%;
+    opacity: 0;
+  }
+}
+@keyframes circle {
+  0% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 1;
+  }
+  100% {
+    width: 200%;
+    height: 200%;
+    opacity: 0;
+  }
+}
+
+/* Footer */
+.footer {
+  background: #eeddcc;
+  height: 286px;
+  width: 1366;
+  position: relative;
+  font-size: 13px;
+  font-weight: 200;
+}
+
+.footer .footer-content {
+  height: 236px;
+  display: flex;
+  text-align: center;
+}
+
+.footer .footer-content .footer-section {
+  flex: 1;
+  padding: 25;
+}
+.footer h4 {
+  font-weight: 200;
+}
+
+.footer .footer-bottom {
+  height: 50px;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  padding-top: 20px;
+}
+
+/* Desktop Version */
+@media (min-width: 992px) {
+  .satu {
+    margin-top: 200px;
+  }
+
+  .satu h5 {
+    font-family: "Playfair Display", serif;
+    font-size: 81px;
+    margin-bottom: 3vh;
+    text-align: right;
+    color: #f9f3dd;
+  }
+
+  .satu p {
+    font-size: 15px;
+    margin-bottom: 4vh;
+    text-align: right;
+    letter-spacing: 5px;
+    color: #f9f3dd;
+  }
+
+  .satu a {
+    color: #f9f3dd;
+    text-align: right;
+    margin-bottom: 1vh;
+    letter-spacing: 2px;
+  }
+
+  .gambar1 {
+    margin-left: auto;
+    size: 15vh;
+    margin-bottom: 5vh;
+    margin-top: 100px;
+  }
+
+  .tombol {
+    position: absolute;
+  }
+
+  .dua {
+    margin-top: 250px;
+  }
+
+  .dua h5 {
+    font-family: "Playfair Display", serif;
+    font-size: 55px;
+    margin-bottom: 3vh;
+    color: #3a3531;
+    letter-spacing: 6px;
+    text-align: left;
+  }
+
+  .dua p {
+    font-size: 15px;
+    margin-bottom: 5vh;
+    text-align: right;
+    letter-spacing: 3px;
+    color: #3a3531;
+  }
+
+  .dua a {
+    color: #3a3531;
+    text-align: right;
+    margin-bottom: 19vh;
+    letter-spacing: 2px;
+  }
+
+  .gambar2 {
+    margin-bottom: 6vh;
+    margin-top: 150px;
+  }
+
+  .tiga {
+    margin-top: 150px;
+  }
+
+  .tiga h5 {
+    font-family: "Playfair Display", serif;
+    font-size: 81px;
+    margin-bottom: 3vh;
+    text-align: right;
+    color: #f9f3dd;
+  }
+
+  .tiga p {
+    font-size: 15px;
+    margin-bottom: 5vh;
+    text-align: right;
+    color: #f9f3dd;
+    letter-spacing: 2px;
+  }
+
+  .tiga a {
+    color: #f9f3dd;
+    text-align: right;
+    margin-bottom: 17vh;
+    letter-spacing: 5px;
+  }
+  .page-wrapper {
+    min-height: 100%;
+  }
+}
