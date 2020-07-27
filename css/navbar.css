@@ -3,10 +3,10 @@
           transform: scale(0.5);
   position: relative;
   right: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
+  position: fixed;
   z-index: 999;
+  top: 20px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -119,6 +119,10 @@
 
 .menu-side {
   padding: 150px;
+}
+
+.navbar {
+  z-index: 9;
 }
 
 .bg-luwes {

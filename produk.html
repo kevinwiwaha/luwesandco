@@ -22,7 +22,9 @@
 <body style="overflow-x: hidden;">
 
   <!-- Navbar -->
-
+  <div id="menu-btn" class="d-block d-md-none" onclick="coba()">
+    <div class="menu-btn__burger"></div>
+  </div>
   <div id="sidebar">
 
     <div class="nav-link w-100 d-block" style="margin-top:100px">
@@ -31,15 +33,13 @@
       <a class="nav-item nav-link active" href="#">product<span class="sr-only">(current)</span></a>
     </div>
   </div>
-
-  <nav class="navbar navbar-expand-lg navbar-light bg-luwes  ">
+  
+  <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-luwes  fixed-top">
     <a class="navbar-brand d-lg-none d-block" href="#">
       <img src="img/brand.svg" width="120" class="d-inline-block align-top mx-5" alt="" loading="lazy" />
     </a>
 
-    <div id="menu-btn" class="d-flex d-md-none" onclick="coba()">
-      <div class="menu-btn__burger"></div>
-    </div>
+    
     <div class="collapse d-none navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav w-100 justify-content-center">
         <a class="nav-item nav-link active d-md-flex align-self-md-center" href="#">home <span
@@ -52,6 +52,7 @@
       </div>
     </div>
   </nav>
+  
   <!-- Akhir Navbar -->
 
   <main>
@@ -109,6 +110,7 @@
       </div>
       </div>
     </section>
+    <section style="height: 100vh;"></section>
   </main>
   <script>
     function coba() {
@@ -118,6 +120,8 @@
       document.getElementById("menu-btn").classList.toggle("open");
     }
   </script>
+  
+    
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
