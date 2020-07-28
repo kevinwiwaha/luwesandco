@@ -25,7 +25,7 @@
 <body style="overflow-x: hidden;">
 
   <!-- Navbar -->
-<div id="menu-btn" class="d-block d-md-none" onclick="coba()">
+  <div id="menu-btn" class="d-block d-md-none" onclick="coba()">
     <div class="menu-btn__burger"></div>
   </div>
   <div id="sidebar">
@@ -36,13 +36,13 @@
       <a class="nav-item nav-link active" href="#">product<span class="sr-only">(current)</span></a>
     </div>
   </div>
-  
+
   <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-luwes  fixed-top">
     <a class="navbar-brand d-lg-none d-block" href="#">
       <img src="img/brand.svg" width="120" class="d-inline-block align-top mx-5" alt="" loading="lazy" />
     </a>
 
-    
+
     <div class="collapse d-none navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav w-100 justify-content-center">
         <a class="nav-item nav-link active d-md-flex align-self-md-center" href="#">home <span
@@ -55,11 +55,11 @@
       </div>
     </div>
   </nav>
-  
+
   <!-- Akhir Navbar -->
 
   <main>
-    <section>
+    <section style="margin-bottom: 100px;">
       <div class="container produk">
         <div class="row mt-md-5 mt-0">
           <div class="col-md-1"></div>
@@ -73,7 +73,7 @@
               <div class="row">
                 <div class="col">
                   <p class="text-size mt-5 mt-md-3">Size</p>
-                  
+
                   <div class="form-size">
                     <input type="radio" name="size" value="small" id="small" checked />
                     <label class="py-1" for="small">S</label>
@@ -84,14 +84,15 @@
                     <input type="radio" name="size" value="extra large" id="extra-large" />
                     <label class="py-1" for="extra-large">XL</label>
                     <br>
-                    <small >
-                      <a href="sizeguide.html" class="size-chart">Size Chart<i class="ml-2 fas fa-ruler-combined"></i></a>
+                    <small>
+                      <a href="sizeguide.html" class="size-chart">Size Chart<i
+                          class="ml-2 fas fa-ruler-combined"></i></a>
                     </small>
                     <div class="mt-3 mt-md-0 d-block d-md-none"><button type="submit"
                         class=" btn btn-md btn-primary btn-order" style="color: #F2E1CF;">Order</button>
                       <a class="btn btn-md btn-outline-primary btn-cons mt-1"
                         href="https://api.whatsapp.com/send?phone=6281333550157&text=Aku%20konsul%20dong%20">Consultation</a>
-                    
+
                     </div>
                   </div>
                 </div>
@@ -119,7 +120,35 @@
       </div>
       </div>
     </section>
-    <section style="height: 30vh;"></section>
+    <section style="height: 100vh;">
+      <h1 class="text-judul mt-5" style="text-align: center;">You may also like</h1>
+      <div class="container">
+        <div class="row mt-5 d-flex justify-content-center">
+          <div class="col-md-3 ">
+            <img src="img/dragontop.png" class="img-fluid" alt="">
+
+            <h5 class="d-block text-center">Cher Tank</h5>
+            <h6 class=" text-center">Rp 119.000</h6>
+
+          </div>
+          <div class="col-md-3 ">
+            <img src="img/loveytop.png" class="img-fluid" alt="">
+
+            <h5 class="d-block text-center">Cher Tank</h5>
+            <h6 class=" text-center">Rp 119.000</h6>
+
+          </div>
+          <div class="col-md-3 ">
+            <img src="img/pinkytop.png" class="img-fluid" alt="">
+
+            <h5 class="d-block text-center">Cher Tank</h5>
+            <h6 class=" text-center">Rp 119.000</h6>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
   </main>
   <!-- Awal Footer -->
   <footer class="site-footer">
@@ -149,14 +178,14 @@
         <div class="col-sm-12 col-md-6">
           <h5>Join Our Mailing List</h5>
           <p class="text-justify">
-            <form action="" method="get" class="search">
+          <form action="" method="get" class="search">
 
-              <div class="form__field">
-                <input type="search" name="search" placeholder="Type Your Mail Here.." class="form__input">
-                <input type="submit" value="   Send  " class="button">
-              </div>
-        
-            </form>
+            <div class="form__field">
+              <input type="search" name="search" placeholder="Type Your Mail Here.." class="form__input">
+              <input type="submit" value="   Send  " class="button">
+            </div>
+
+          </form>
           </p>
         </div>
       </div>
@@ -170,7 +199,7 @@
         </div>
       </div>
     </div>
-</footer>
+  </footer>
 
   <!-- Akhir Footer -->
   <script>
@@ -181,20 +210,20 @@
       document.getElementById("menu-btn").classList.toggle("open");
     }
   </script>
-  
-    
+
+
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-  </script>
+    </script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
     integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-  </script>
+    </script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
     integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
-  </script>
-  
+    </script>
+
   <script src="js/sidebar.js"></script>
 
 </body>
