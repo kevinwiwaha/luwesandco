@@ -108,6 +108,23 @@ p {
   font-size: 14px;
 }
 
+// More
+.text-judul {
+  font-size: 24px;
+  font-weight: 100;
+  font-family: "Poppins", sans-serif;
+  font-style: initial;
+}
+.text-judul::after {
+  content: "";
+  display: block;
+  border-bottom: 4px solid #d9caba;
+  width: 8%;
+  margin: auto;
+  padding-bottom: 5px;
+}
+
+
 @media (min-width: 992px) {
   // Navbar
   .nav-link {
