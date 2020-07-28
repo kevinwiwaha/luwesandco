@@ -169,6 +169,10 @@ section {
   font-weight: 400;
 }
 
+.tulis h5 {
+  font-weight: bold;
+}
+
 /* Circle */
 .hover15 figure {
   position: relative;
@@ -219,38 +223,12 @@ section {
   }
 }
 
-/* Footer */
-.footer {
-  background: #eeddcc;
-  height: 286px;
-  width: 1366;
-  position: relative;
-  font-size: 13px;
-  font-weight: 200;
-}
-
-.footer .footer-content {
-  height: 236px;
-  display: flex;
-  text-align: center;
-}
-
-.footer .footer-content .footer-section {
-  flex: 1;
-  padding: 25;
-}
-.footer h4 {
-  font-weight: 200;
-}
-
-.footer .footer-bottom {
-  height: 50px;
-  width: 100%;
-  text-align: center;
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-  padding-top: 20px;
+@media (max-width: 767px) {
+  .social-icons li.title {
+    display: block;
+    margin-right: 0;
+    font-weight: 600;
+  }
 }
 
 /* Desktop Version */
