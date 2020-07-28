@@ -27,28 +27,29 @@
 
 <body style="overflow-x: hidden;">
   <!--Awal Navbar-->
+  <div id="menu-btn" class="d-block d-md-none" onclick="coba()">
+    <div class="menu-btn__burger"></div>
+  </div>
   <div id="sidebar">
 
     <div class="nav-link w-100 d-block" style="margin-top:100px">
-      <a class="nav-item nav-link active" href="landingPage.html">Home<span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link active" href="">Home<span class="sr-only">(current)</span></a>
       <br>
       <a class="nav-item nav-link active" href="catalogue.html">product<span class="sr-only">(current)</span></a>
     </div>
   </div>
-
-  <nav class="navbar navbar-expand-lg navbar-light bg-luwes  ">
+  
+  <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-luwes  fixed-top">
     <a class="navbar-brand d-lg-none d-block" href="#">
       <img src="img/brand.svg" width="120" class="d-inline-block align-top mx-5" alt="" loading="lazy" />
     </a>
 
-    <div id="menu-btn" class="d-flex d-md-none" onclick="coba()">
-      <div class="menu-btn__burger"></div>
-    </div>
+    
     <div class="collapse d-none navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav w-100 justify-content-center">
-        <a class="nav-item nav-link active d-md-flex align-self-md-center" href="landingPage.html">home <span
+        <a class="nav-item nav-link active d-md-flex align-self-md-center" href="">home <span
             class="sr-only">(current)</span></a>
-        <a class="navbar-brand d-md-block d-none" href="landingPage.html">
+        <a class="navbar-brand d-md-block d-none" href="#">
           <img src="img/brand.svg" width="120" class="d-inline-block align-top mx-5" alt="" loading="lazy" />
         </a>
         <a class="nav-item nav-link active d-md-flex align-self-md-center" href="catalogue.html">product <span
@@ -67,11 +68,11 @@
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
       </ol>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
+      <div class="carousel-inner" style="margin-top: 50px;" >
+        <div class="carousel-item active" >
           <section style="background-image: url(img/car1.png);">
             <div class="container">
-              <div class="row ">
+              <div class="row car">
                 <div class="col-lg-5 ">
                   <div class="gambar1 col-md-4 ml-auto d-none d-md-block">
                     <img src="img/Group 34.png" alt="Card image cap" class="float-right" />
@@ -93,7 +94,7 @@
         <div class="carousel-item">
           <section style="background-image: url(img/car2.png);">
             <div class="container">
-              <div class="row">
+              <div class="row car">
                 <div class="col-lg-5">
                   <div class="gambar2 col-md-4 ml-auto d-none d-md-block">
                     <img src="img/Group 35.png" alt="Card image cap" class="float-right" />
@@ -116,7 +117,7 @@
         <div class="carousel-item">
           <section style="background-image: url(img/Group\ 61.png);">
             <div class="container">
-              <div class="row">
+              <div class="row car">
                 <div class="col-lg-5 ">
                   <div class="gambar2 col-md-4 ml-auto d-none d-md-block">
                     <img src="img/Group 43.png" alt="Card image cap" class="float-right" />
@@ -148,14 +149,14 @@
       <!-- Akhir Carousel -->
 
       <!-- Awal Popular Item -->
-      <div class="container">
+      <div class="container mb-5">
         <p class="text-judul mt-5" style="text-align: center;">Popular Item</p>
         <div class=" mt-5 d-flex justify-content-around">
           <div class="hover15 column">
           <div class="row ">
             <div class="col-md-4">
               <div class="Kotak">
-                <figure><img class="card-img-top" src="img/pinkytop.png" alt="Card image cap" /></figure>
+                <figure><a href="/produk.html"><img class="card-img-top popular-img" src="img/pinkytop.png" alt="Card image cap" /></a></figure>
                 <div class="card-body">
                   <h5 class="card-title just text-center">Cher Tank</h5>
                   <h6 class="card-subtitle mb-2 text-center">Rp 119.000</h6>
@@ -164,7 +165,7 @@
             </div>
             <div class="col-md-4">
               <div class="Kotak">
-                <figure><img class="card-img-top" src="img/loveytop.png" alt="Card image cap" /></figure>
+                <figure><img class="card-img-top popular-img" src="img/loveytop.png" alt="Card image cap" /></figure>
                 <div class="card-body">
                   <h5 class="card-title just text-center">Lovey Top</h5>
                   <h6 class="card-subtitle mb-2 text-center">Rp 124.500</h6>
@@ -173,7 +174,7 @@
             </div>
             <div class="col-md-4">
               <div class="Kotak">
-                <figure><img class="card-img-top" src="img/dragontop.png" alt="Card image cap" /></figure>
+                <figure><img class="card-img-top popular-img" src="img/dragontop.png" alt="Card image cap" /></figure>
                 <div class="card-body">
                   <h5 class="card-title just text-center">Dragon Top</h5>
                   <h6 class="card-subtitle mb-2 text-center">Rp 149.000</h6>
