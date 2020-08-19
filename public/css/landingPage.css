@@ -78,7 +78,7 @@ section {
   margin-bottom: 5vh;
 }
 
-.tombol {
+.tomboll {
   position: absolute;
 }
 
@@ -222,7 +222,7 @@ section {
     margin-top: 100px;
   }
 
-  .tombol {
+  .tomboll {
     position: absolute;
   }
 
@@ -285,6 +285,7 @@ section {
     margin-bottom: 17vh;
     letter-spacing: 5px;
   }
+
   .page-wrapper {
     min-height: 100%;
   }

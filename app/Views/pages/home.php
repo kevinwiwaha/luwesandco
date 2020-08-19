@@ -24,7 +24,7 @@
                                    <h5>Pre-Order <span><br> Now</span></h5>
                                    <p>LIVE UP YOUR LIFE WITH LUWES & CO.</p>
                                    <div class="col-md-4 offset-md-8">
-                                       <a href="catalogue.html" class="btn btn-light tombol ">SHOP NOW</a>
+                                       <a href="catalogue.html" class="btn btn-light tomboll ">SHOP NOW</a>
                                    </div>
                                </div>
                            </div>
@@ -46,7 +46,7 @@
                                    <h5>LuwesAndCo.</h5>
                                    <p>WE STAY IN TOP, SO YOU CAN BE ON TOP.</p>
                                    <div class="col-md-4 offset-md-8">
-                                       <a href="catalogue.html" class="btn btn-dark tombol ">SHOP NOW</a>
+                                       <a href="catalogue.html" class="btn btn-dark tomboll ">SHOP NOW</a>
                                    </div>
                                </div>
                            </div>
@@ -68,8 +68,8 @@
                                <div class="col-lg-5 tiga ">
                                    <h5>Simpli-<span><br> city.</span></h5>
                                    <p>BE COMFORTABLE, BE INSPIRED, BE RIGHT AT HOME.</p>
-                                   <div class="col-md-4 offset-md-8">
-                                       <a href="catalogue.html" class="btn btn-light tombol ">SHOP NOW</a>
+                                   <div class="col-md- offset-md-8">
+                                       <a href="catalogue.html" class="btn btn-light tomboll ">SHOP NOW</a>
                                    </div>
                                </div>
                            </div>
@@ -95,38 +95,39 @@
            <div class=" mt-5 d-flex justify-content-around">
                <div class="hover15 column">
                    <div class="row ">
-                       <div class="col-md-4">
-                           <div class="Kotak">
-                               <figure><a href="produk.html"><img class="card-img-top popular-img" src="/img/pinkytop.png" alt="Card image cap" /></a></figure>
-                               <div class="card-body">
-                                   <h5 class="card-title just text-center">Cher Tank</h5>
-                                   <h6 class="card-subtitle mb-2 text-center">Rp 119.000</h6>
-                               </div>
+                       <div class="row mt-5 d-flex justify-content-center">
+                           <div class="col-md-3 ">
+                               <img src="/img/dragontop.png" class="img-fluid" alt="">
+
+                               <h5 class="d-block text-center">Cher Tank</h5>
+                               <h6 class=" text-center">Rp 119.000</h6>
+
                            </div>
-                       </div>
-                       <div class="col-md-4">
-                           <div class="Kotak">
-                               <figure><img class="card-img-top popular-img" src="/img/loveytop.png" alt="Card image cap" /></figure>
-                               <div class="card-body">
-                                   <h5 class="card-title just text-center">Lovey Top</h5>
-                                   <h6 class="card-subtitle mb-2 text-center">Rp 124.500</h6>
-                               </div>
+                           <div class="col-md-3 ">
+                               <img src="/img/loveytop.png" class="img-fluid" alt="">
+
+                               <h5 class="d-block text-center">Cher Tank</h5>
+                               <h6 class=" text-center">Rp 119.000</h6>
+
                            </div>
-                       </div>
-                       <div class="col-md-4">
-                           <div class="Kotak">
-                               <figure><img class="card-img-top popular-img" src="/img/dragontop.png" alt="Card image cap" /></figure>
-                               <div class="card-body">
-                                   <h5 class="card-title just text-center">Dragon Top</h5>
-                                   <h6 class="card-subtitle mb-2 text-center">Rp 149.000</h6>
-                               </div>
+                           <div class="col-md-3 ">
+                               <img src="/img/pinkytop.png" class="img-fluid" alt="">
+
+                               <h5 class="d-block text-center">Cher Tank</h5>
+                               <h6 class=" text-center">Rp 119.000</h6>
+
                            </div>
                        </div>
                    </div>
                </div>
+
            </div>
        </div>
+   </div>
+   </div>
+   </div>
+   </div>
 
-       <!-- Akhir Popular Item -->
+   <!-- Akhir Popular Item -->
 
-       <?= $this->endSection(); ?>
+   <?= $this->endSection(); ?>

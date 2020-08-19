@@ -30,7 +30,7 @@
                             <h6 class="card-title mb-1 ">M,L</h6>
                             <h6 class="card-title ">Rp 149.000</h6>
                         </div>
-                        <div class="tombol col-4 ml-auto mt-3">
+                        <div class="tombol col-4 ml-auto mt-3 ">
                             <button type="button" class="btn btn-dark">BUY</button>
                         </div>
                     </div>
