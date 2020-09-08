@@ -6,7 +6,7 @@ class admin extends BaseController
 {
     public function admin()
     {
-        return view('layout/admin');
+        return view('admin/admin');
     }
 
     //--------------------------------------------------------------------
