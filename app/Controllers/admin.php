@@ -2,13 +2,14 @@
 
 namespace App\Controllers;
 
+use App\Models\LoginModel;
+
 class admin extends BaseController
 {
     public function __construct()
     {
-        parent::__construct();
-
-        $this->load->library('form_validation');
+        helper('form');
+        $this->LoginModel = new LoginModel();
     }
     public function admin()
     {
@@ -18,19 +19,24 @@ class admin extends BaseController
     {
         return view('admin/login');
     }
-    public function signUp()
+    public function cek_login()
     {
-        $this->form_validation->set_rules('fname','firstName','required | trim');
-        $this->form_validation->set_rules('lname','lastName','required | trim');
-        $this->form_validation->set_rules('uname','name','required | trim');
-        
-        if( $this->form_validation->run() == false){
-            
-            return view('admin/signUp');
+        $muser = new LoginModel();
+        $username = $this->request->getPost('username');
+        $password = $this->request->getPost('password');
+
+        $cek = $this->LoginModel->cek_login($username, $password);
+
+        if (($cek['nama_user'] == $username) && ($cek['password'] == $password)) {
+            session()->set('username', $cek['username']);
+            session()->set('nama_user', $cek['nama_user']);
+            return redirect()->to(base_url('Pages/Home'));
         } else {
-            echo 'Data has been updated:*'
+            session()->setFlashdata('Gagal', 'Username atau Password Salah');
+            return redirect()->to(base_url('Admin/Login'));
         }
     }
+
     //--------------------------------------------------------------------
 
 }

@@ -42,7 +42,7 @@ use App\Controllers\admin;
                                     <div class="col-sm-6 mb-3 mb-sm-0">
                                         <input type="text" class="form-control form-control-user" id="firstName" name="fname" placeholder="First Name">
                                         <small class="text-danger pl-3"></small>
-                                        <?= form_error('fname'); ?>
+
                                     </div>
                                     <div class="col-sm-6">
                                         <input type="text" class="form-control form-control-user" id="lastName" name="lname" placeholder="Last Name">

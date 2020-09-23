@@ -35,19 +35,30 @@
                             <div class="text-center">
                                 <h1 class="h4 text-gray-900 mb-4">Welcome To LuwesAndCo !</h1>
                             </div>
-                            <form class="user" method="POST" action="<?= base_url('admin/signUp'); ?>">
-                                <div class="form-group">
-                                    <input type="text" class="form-control form-control-user" id="uname" name="name" aria-describedby="userName" placeholder="Username">
+
+                            <?php if (!empty(session()->getFlashdata('gagal'))) { ?>
+                                <div class="alert alert-warning">
+                                    <?php echo session()->getFlashdata('gagal'); ?>
                                 </div>
-                                <div class="form-group">
-                                    <input type="password" class="form-control form-control-user" id="password" name="password" placeholder="Password">
-                                </div>
-                                <button type="submit" class="btn btn-primary btn-user btn-block">
-                                    Login
-                                </button>
-                                <div class="text-center">
-                                    <a class="small" href=" <?= base_url('admin/signUp'); ?>">Create an Account!</a>
-                                </div>
+                            <?php } ?>
+                            <?php
+                            echo form_open('admin/cek_login')
+
+                            ?>
+                            <div class="form-group">
+                                <input type="text" class="form-control form-control-user" name="username" aria-describedby="userName" placeholder="Username" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control form-control-user" name="password" placeholder="Password" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-user btn-block">
+                                Login
+                            </button>
+                            <?php echo form_close(); ?>
+                            <div class="text-center">
+                                <a class="small" href=" <?= base_url('admin/signUp'); ?>">Create an Account!</a>
+                            </div>
+
                         </div>
 
                     </div>
